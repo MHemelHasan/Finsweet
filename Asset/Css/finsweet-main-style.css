@@ -1,5 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+header {
+  background-color: #fff;
+}
+
+header nav .container-fluid .navbar-brand {
+  padding: 12px 0;
+  margin: 0;
+}
+header nav .container-fluid .navbar-brand img {
+  width: 122px;
+  height: 28px;
+}
+header nav .container-fluid .navbar-collapse {
+  flex-grow: 0;
+}
+header nav .container-fluid .navbar-collapse .navbar-nav {
+  align-items: center;
+}
+header nav .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #394149;
+  padding: 22px 0px;
+}
+header nav .container-fluid .navbar-collapse .navbar-nav .nav-btn {
+  background-color: rgba(245, 138, 7, 0.1019607843);
+  border: none;
+  border-radius: 31px;
+  padding: 0;
+  margin: 0;
+}
+header nav .container-fluid .navbar-collapse .navbar-nav .nav-btn a {
+  color: #f58a07;
+  padding: 18px 32px;
+  font-size: 16px;
+  line-height: 106.5%;
+  font-weight: 600;
+}
+
 /* For best practice, move CSS below to an external CSS file. */
-@keyframes fadeinall {
+@keyframes fadeInAll {
   0% {
     opacity: 1;
   }
@@ -25,4 +73,4 @@
   .container-xxl {
     max-width: 1280px;
   }
-}/*# sourceMappingURL=finsweet-main-style.css.map */
+}
