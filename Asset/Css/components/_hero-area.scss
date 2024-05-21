@@ -1,0 +1,11 @@
+#hero-area {
+    .hero-banner {
+        display: flex;
+        .banner-details {
+            flex: 0 0 50%;
+        }
+        .banner-image {
+            flex: 0 0 50%;
+        }
+    }
+}

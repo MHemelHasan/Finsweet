@@ -52,6 +52,29 @@ header nav .container-fluid .navbar-collapse .navbar-nav .nav-btn a {
   font-weight: 600;
 }
 
+#hero-area .hero-banner {
+  display: flex;
+}
+#hero-area .hero-banner .banner-details {
+  flex: 0 0 50%;
+}
+#hero-area .hero-banner .banner-image {
+  flex: 0 0 50%;
+}
+
+#blog-widget .blog-widget-card-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+#blog-widget .blog-widget-card-row .blog-widget-card {
+  flex: 0 0 33.3333%;
+}
+
+@media only screen and (max-width: 767px) {
+  #blog-widget .blog-widget-card-row .blog-widget-card {
+    flex: 0 0 100%;
+  }
+}
 /* For best practice, move CSS below to an external CSS file. */
 @keyframes fadeInAll {
   0% {

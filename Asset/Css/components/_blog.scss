@@ -1,0 +1,21 @@
+#blog-widget {
+    .blog-widget-head {
+    }
+    .blog-widget-card-row {
+        display: flex;
+        flex-wrap: wrap;
+        .blog-widget-card {
+            flex: 0 0 33.3333%;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #blog-widget {
+        .blog-widget-card-row {
+            .blog-widget-card {
+                flex: 0 0 100%;
+            }
+        }
+    }
+}
