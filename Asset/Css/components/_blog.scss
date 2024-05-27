@@ -1,11 +1,54 @@
 #blog-widget {
+    padding: 96px 0;
     .blog-widget-head {
+        max-width: 735px;
+        margin-bottom: 64px;
+        h2 {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 56px;
+            letter-spacing: -1px;
+            color: $primaryColor;
+            margin-bottom: 27px;
+        }
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 30px;
+            color: $textColor;
+        }
     }
     .blog-widget-card-row {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        gap: 40px;
         .blog-widget-card {
             flex: 0 0 33.3333%;
+            .blog-widget-card-img {
+                border-radius: 20px;
+                margin-bottom: 33px;
+                max-width: 400px;
+                img {
+                    width: 100%;
+                }
+            }
+            .blog-widget-card-details {
+                h4 {
+                    font-size: 24px;
+                    line-height: 106.5%;
+                    font-weight: 500;
+                    color: $headingColor;
+                    margin: 0;
+                    margin-bottom: 17px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 28px;
+                    font-weight: 500;
+                    color: $textColor;
+                    margin-bottom: 24px;
+                }
+            }
         }
     }
 }

@@ -1,0 +1,67 @@
+#soft-solution-area {
+    background-color: $sectionBackground;
+    padding: 96px 0;
+    .soft-solution-heading {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 40px;
+        margin-bottom: 64px;
+        h2 {
+            flex: 0 0 50%;
+            font-size: 36px;
+            line-height: 44px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            color: $headingColor;
+            margin: 0;
+        }
+        P {
+            flex: 0 0 50%;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 500;
+            color: $primaryColor;
+            margin: 0;
+        }
+    }
+    .soft-solution-services {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 38px;
+        .soft-solution-card {
+            border-radius: 20px;
+            background-color: $white;
+            flex: 0 0 33.3333%;
+            padding: 40px 26px 37px 39px;
+            img {
+                margin-bottom: 32px;
+            }
+            h5 {
+                margin-bottom: 16px;
+                color: $headingColor;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 106.5%;
+            }
+            p {
+                font-size: 16px;
+                line-height: 28px;
+                font-weight: 500;
+                color: $textColor;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #soft-solution-area {
+        .soft-solution-services {
+            .soft-solution-card {
+                flex: 0 0 100%;
+            }
+        }
+    }
+}
