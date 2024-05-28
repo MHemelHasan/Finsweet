@@ -19,11 +19,10 @@
         }
     }
     .blog-widget-card-row {
-        display: flex;
-        flex-wrap: nowrap;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 2 columns */
         gap: 40px;
         .blog-widget-card {
-            flex: 0 0 33.3333%;
             .blog-widget-card-img {
                 border-radius: 20px;
                 margin-bottom: 33px;

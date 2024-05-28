@@ -1,0 +1,58 @@
+.services-area {
+    padding: 0 0 128px 0;
+    .services-section-wrapper {
+        background-color: $sectionBackground;
+        position: relative;
+        padding: 48px;
+        .services-batch {
+            position: absolute;
+            right: -15px;
+            top: -16px;
+        }
+        .services-tab-area {
+            padding-bottom: 80px;
+            display: flex;
+            gap: 24px;
+            .service-tab-btn {
+                padding: 8px 24px;
+                font-size: 16px;
+                line-height: auto;
+                font-weight: 600;
+                border-radius: 31px;
+                color: $btn-border-color;
+                border: 1px solid $btn-border-color;
+                &.active {
+                    color: $highlightColor;
+                    background-color: $white;
+                    border-color: $white;
+                }
+            }
+        }
+        .services-content-area {
+            .service-single-content {
+                display: flex;
+                gap: 70px;
+                .service-single-content-details {
+                }
+                .service-single-content-imge {
+                    position: relative;
+                    max-width: 470px;
+                    border-radius: 10px;
+                    .service-image-overlay {
+                        border-radius: 11px;
+                        position: absolute;
+                        background-color: $highlightColor;
+                        width: 120px;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        mix-blend-mode: multiply;
+                    }
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -67,13 +67,13 @@ header nav .container-fluid .navbar-collapse .navbar-nav .nav-btn a {
   background-color: #dceaf5;
 }
 #hero-area .hero-banner {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 40px;
+  align-items: end;
 }
 #hero-area .hero-banner .banner-details {
-  flex: 0 0 50%;
-}
-#hero-area .hero-banner .banner-details .banner-details-wrapper {
-  padding-top: 117px;
+  padding: 117px 0 147px 0;
 }
 #hero-area .hero-banner .banner-details .banner-details-wrapper h1 {
   font-size: 64px;
@@ -127,10 +127,17 @@ header nav .container-fluid .navbar-collapse .navbar-nav .nav-btn a {
   gap: 45px;
 }
 #hero-area .hero-banner .banner-image {
-  flex: 0 0 50%;
-  padding-top: 58px;
+  align-content: end;
 }
 
+@media only screen and (max-width: 1720px) {
+  #hero-area .hero-banner .banner-details {
+    padding: 117px 0 117px 0;
+  }
+  #hero-area .hero-banner .banner-image img {
+    width: 100%;
+  }
+}
 #blog-widget {
   padding: 96px 0;
 }
@@ -153,12 +160,9 @@ header nav .container-fluid .navbar-collapse .navbar-nav .nav-btn a {
   color: #5b5b5b;
 }
 #blog-widget .blog-widget-card-row {
-  display: flex;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 columns */
   gap: 40px;
-}
-#blog-widget .blog-widget-card-row .blog-widget-card {
-  flex: 0 0 33.3333%;
 }
 #blog-widget .blog-widget-card-row .blog-widget-card .blog-widget-card-img {
   border-radius: 20px;
@@ -201,7 +205,7 @@ header nav .container-fluid .navbar-collapse .navbar-nav .nav-btn a {
   margin-bottom: 64px;
 }
 #soft-solution-area .soft-solution-heading h2 {
-  flex: 0 0 50%;
+  flex: 0 0 calc(50% - 20px);
   font-size: 36px;
   line-height: 44px;
   font-weight: 600;
@@ -210,7 +214,7 @@ header nav .container-fluid .navbar-collapse .navbar-nav .nav-btn a {
   margin: 0;
 }
 #soft-solution-area .soft-solution-heading P {
-  flex: 0 0 50%;
+  flex: 0 0 calc(50% - 20px);
   font-size: 18px;
   line-height: 30px;
   font-weight: 500;
@@ -218,16 +222,13 @@ header nav .container-fluid .navbar-collapse .navbar-nav .nav-btn a {
   margin: 0;
 }
 #soft-solution-area .soft-solution-services {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  gap: 38px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 40px;
 }
 #soft-solution-area .soft-solution-services .soft-solution-card {
   border-radius: 20px;
   background-color: #fff;
-  flex: 0 0 33.3333%;
   padding: 40px 26px 37px 39px;
 }
 #soft-solution-area .soft-solution-services .soft-solution-card img {
@@ -247,11 +248,142 @@ header nav .container-fluid .navbar-collapse .navbar-nav .nav-btn a {
   color: #5b5b5b;
 }
 
-@media only screen and (max-width: 767px) {
-  #soft-solution-area .soft-solution-services .soft-solution-card {
-    flex: 0 0 100%;
+@media only screen and (max-width: 1199px) {
+  #soft-solution-area .soft-solution-services {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+@media only screen and (max-width: 767px) {
+  #soft-solution-area .soft-solution-services {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#awards-wizget {
+  padding: 99px 0 96px 0;
+}
+#awards-wizget .awards-wizget-warrper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 70px;
+  align-items: center;
+}
+#awards-wizget .awards-wizget-warrper .awards-description h2 {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -1px;
+  font-weight: 600;
+  color: #0d1317;
+  margin-bottom: 32px;
+}
+#awards-wizget .awards-wizget-warrper .awards-description p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 48px;
+  color: #5b5b5b;
+  max-width: 510px;
+  text-align: left;
+}
+#awards-wizget .awards-wizget-warrper .awards-description .awards-spc {
+  display: flex;
+}
+#awards-wizget .awards-wizget-warrper .awards-description .awards-spc .awards-spc-card {
+  flex: 0 0 50%;
+}
+#awards-wizget .awards-wizget-warrper .awards-description .awards-spc .awards-spc-card h4.highlight {
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #f58a07;
+  margin-bottom: 16px;
+}
+#awards-wizget .awards-wizget-warrper .awards-description .awards-spc .awards-spc-card h6 {
+  font-size: 24px;
+  line-height: 106.5%;
+  letter-spacing: -1px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #0d1317;
+}
+#awards-wizget .awards-wizget-warrper .awards-description .awards-spc .awards-spc-card span {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #5b5b5b;
+  text-align: left;
+}
+#awards-wizget .awards-wizget-warrper .awards-certificate {
+  position: relative;
+}
+#awards-wizget .awards-wizget-warrper .awards-certificate img {
+  width: 100%;
+}
+#awards-wizget .awards-wizget-warrper .awards-certificate .awards-batch {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  right: 0;
+  width: 116px;
+  height: 113px;
+  margin-right: -58px;
+  margin-top: -56px;
+}
+
+.services-area {
+  padding: 0 0 128px 0;
+}
+.services-area .services-section-wrapper {
+  background-color: #edf7ff;
+  position: relative;
+  padding: 48px;
+}
+.services-area .services-section-wrapper .services-batch {
+  position: absolute;
+  right: -15px;
+  top: -16px;
+}
+.services-area .services-section-wrapper .services-tab-area {
+  padding-bottom: 80px;
+  display: flex;
+  gap: 24px;
+}
+.services-area .services-section-wrapper .services-tab-area .service-tab-btn {
+  padding: 8px 24px;
+  font-size: 16px;
+  line-height: auto;
+  font-weight: 600;
+  border-radius: 31px;
+  color: #a8bccc;
+  border: 1px solid #a8bccc;
+}
+.services-area .services-section-wrapper .services-tab-area .service-tab-btn.active {
+  color: #f58a07;
+  background-color: #fff;
+  border-color: #fff;
+}
+.services-area .services-section-wrapper .services-content-area .service-single-content {
+  display: flex;
+  gap: 70px;
+}
+.services-area .services-section-wrapper .services-content-area .service-single-content .service-single-content-imge {
+  position: relative;
+  max-width: 470px;
+  border-radius: 10px;
+}
+.services-area .services-section-wrapper .services-content-area .service-single-content .service-single-content-imge .service-image-overlay {
+  border-radius: 11px;
+  position: absolute;
+  background-color: #f58a07;
+  width: 120px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  mix-blend-mode: multiply;
+}
+.services-area .services-section-wrapper .services-content-area .service-single-content .service-single-content-imge img {
+  width: 100%;
+}
+
 /* For best practice, move CSS below to an external CSS file. */
 @keyframes fadeInAll {
   0% {
@@ -279,4 +411,4 @@ header nav .container-fluid .navbar-collapse .navbar-nav .nav-btn a {
   .container-xxl {
     max-width: 1280px;
   }
-}/*# sourceMappingURL=finsweet-main-style.css.map */
+}

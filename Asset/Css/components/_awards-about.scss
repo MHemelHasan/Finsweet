@@ -1,0 +1,74 @@
+#awards-wizget {
+    padding: 99px 0 96px 0;
+    .awards-wizget-warrper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 70px;
+        align-items: center;
+        .awards-description {
+            h2 {
+                font-size: 48px;
+                line-height: 56px;
+                letter-spacing: -1px;
+                font-weight: 600;
+                color: $headingColor;
+                margin-bottom: 32px;
+            }
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 30px;
+                margin-bottom: 48px;
+                color: $textColor;
+                max-width: 510px;
+                text-align: left;
+            }
+            .awards-spc {
+                display: flex;
+                .awards-spc-card {
+                    flex: 0 0 50%;
+                    h4 {
+                        &.highlight {
+                            font-size: 36px;
+                            line-height: 50px;
+                            font-weight: 700;
+                            color: $highlightColor;
+                            margin-bottom: 16px;
+                        }
+                    }
+                    h6 {
+                        font-size: 24px;
+                        line-height: 106.5%;
+                        letter-spacing: -1px;
+                        font-weight: 600;
+                        margin-bottom: 16px;
+                        color: $headingColor;
+                    }
+                    span {
+                        font-size: 16px;
+                        line-height: 28px;
+                        font-weight: 500;
+                        color: $textColor;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        .awards-certificate {
+            position: relative;
+            img {
+                width: 100%;
+            }
+            .awards-batch {
+                position: absolute;
+                top: 0;
+                z-index: 2;
+                right: 0;
+                width: 116px;
+                height: 113px;
+                margin-right: -58px;
+                margin-top: -56px;
+            }
+        }
+    }
+}
