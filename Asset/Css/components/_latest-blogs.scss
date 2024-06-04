@@ -1,0 +1,45 @@
+.latest-blogs-area {
+    background-color: $heroBackground;
+    padding: 96px 0px;
+    h2 {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 56px;
+        letter-spacing: -1px;
+        color: $headingColor;
+        margin-bottom: 64px;
+    }
+    .latest-blogs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        .single-blog-post {
+            background-color: $white;
+            border-radius: 20px;
+            .single-blog-post-img {
+                height: 230px;
+            }
+            .single-blog-dis {
+                padding: 32px;
+                h4 {
+                    font-size: 24px;
+                    line-height: 36px;
+                    letter-spacing: -1px;
+                    font-weight: 500;
+                    color: $headingColor;
+                    margin-bottom: 16px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 28px;
+                    font-weight: 500;
+                    color: $textColor;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1720px) {
+}

@@ -15,6 +15,8 @@ a.arrow-btn {
 }
 a.arrow-btn img {
   margin-left: 9px;
+  width: 22px;
+  height: 10px;
 }
 
 header {
@@ -505,6 +507,49 @@ header nav .container-fluid .navbar-collapse .navbar-nav .nav-btn a {
 }
 .home-video-area .wapper .video-player .video-contolar img {
   margin-right: 16px;
+}
+
+.latest-blogs-area {
+  background-color: #dceaf5;
+  padding: 96px 0px;
+}
+.latest-blogs-area h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: -1px;
+  color: #0d1317;
+  margin-bottom: 64px;
+}
+.latest-blogs-area .latest-blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.latest-blogs-area .latest-blogs .single-blog-post {
+  background-color: #fff;
+  border-radius: 20px;
+}
+.latest-blogs-area .latest-blogs .single-blog-post .single-blog-post-img {
+  height: 230px;
+}
+.latest-blogs-area .latest-blogs .single-blog-post .single-blog-dis {
+  padding: 32px;
+}
+.latest-blogs-area .latest-blogs .single-blog-post .single-blog-dis h4 {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -1px;
+  font-weight: 500;
+  color: #0d1317;
+  margin-bottom: 16px;
+}
+.latest-blogs-area .latest-blogs .single-blog-post .single-blog-dis p {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #5b5b5b;
+  margin-bottom: 24px;
 }
 
 /* For best practice, move CSS below to an external CSS file. */
