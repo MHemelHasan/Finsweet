@@ -1,0 +1,36 @@
+.home-cta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    .cta-banner {
+        img {
+            width: 100%;
+        }
+    }
+    .cta-description {
+        background-color: $highlightColor;
+        width: 100%;
+        height: 100%;
+        padding-left: calc(128px);
+        align-content: center;
+        h2 {
+            max-width: 532px;
+            font-size: 48px;
+            line-height: 56px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            color: $white;
+            margin-bottom: 40px;
+        }
+        a.cta-action-btn {
+            font-size: 16px;
+            font-weight: 600;
+            list-style: 106.5%;
+            padding: 18px 32px;
+            color: $highlightColor;
+            background-color: $white;
+            border-radius: 31px;
+            text-decoration: none;
+        }
+    }
+}

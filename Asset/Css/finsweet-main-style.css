@@ -336,6 +336,7 @@ header nav .container-fluid .navbar-collapse .navbar-nav .nav-btn a {
   background-color: #edf7ff;
   position: relative;
   padding: 48px;
+  border-radius: 20px;
 }
 .services-area .services-section-wrapper .services-batch {
   position: absolute;
@@ -362,8 +363,24 @@ header nav .container-fluid .navbar-collapse .navbar-nav .nav-btn a {
   border-color: #fff;
 }
 .services-area .services-section-wrapper .services-content-area .service-single-content {
-  display: flex;
-  gap: 70px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 140px;
+}
+.services-area .services-section-wrapper .services-content-area .service-single-content .service-single-content-details h2 {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -2px;
+  font-weight: 600;
+  color: #0d1317;
+  margin-bottom: 25px;
+}
+.services-area .services-section-wrapper .services-content-area .service-single-content .service-single-content-details p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #5b5b5b;
+  margin-bottom: 40px;
 }
 .services-area .services-section-wrapper .services-content-area .service-single-content .service-single-content-imge {
   position: relative;
@@ -382,6 +399,112 @@ header nav .container-fluid .navbar-collapse .navbar-nav .nav-btn a {
 }
 .services-area .services-section-wrapper .services-content-area .service-single-content .service-single-content-imge img {
   width: 100%;
+}
+
+.home-cta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.home-cta .cta-banner img {
+  width: 100%;
+}
+.home-cta .cta-description {
+  background-color: #f58a07;
+  width: 100%;
+  height: 100%;
+  padding-left: 128px;
+  align-content: center;
+}
+.home-cta .cta-description h2 {
+  max-width: 532px;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.home-cta .cta-description a.cta-action-btn {
+  font-size: 16px;
+  font-weight: 600;
+  list-style: 106.5%;
+  padding: 18px 32px;
+  color: #f58a07;
+  background-color: #fff;
+  border-radius: 31px;
+  text-decoration: none;
+}
+
+.home-video-area {
+  padding: 128px 0px;
+}
+.home-video-area .wapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 110px;
+  align-items: center;
+}
+.home-video-area .wapper .video-description h4 {
+  color: #0d1317;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: -2px;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+.home-video-area .wapper .video-description p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #5b5b5b;
+  margin-bottom: 40px;
+}
+.home-video-area .wapper .video-description .video-author {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.home-video-area .wapper .video-description .video-author img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.home-video-area .wapper .video-description .video-author .video-author-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-video-area .wapper .video-description .video-author .video-author-details span {
+  font-weight: 500;
+  line-height: 171%;
+}
+.home-video-area .wapper .video-description .video-author .video-author-details span.author-name {
+  font-size: 24px;
+  color: #063255;
+}
+.home-video-area .wapper .video-description .video-author .video-author-details span.author-pos {
+  font-size: 18px;
+  color: #f58a07;
+}
+.home-video-area .wapper .video-player {
+  border-right: 20px;
+  width: 100%;
+  position: relative;
+}
+.home-video-area .wapper .video-player video {
+  border-right: 20px;
+  min-height: 500px;
+}
+.home-video-area .wapper .video-player .video-contolar {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: #fff;
+}
+.home-video-area .wapper .video-player .video-contolar img {
+  margin-right: 16px;
 }
 
 /* For best practice, move CSS below to an external CSS file. */

@@ -4,6 +4,7 @@
         background-color: $sectionBackground;
         position: relative;
         padding: 48px;
+        border-radius: 20px;
         .services-batch {
             position: absolute;
             right: -15px;
@@ -30,9 +31,27 @@
         }
         .services-content-area {
             .service-single-content {
-                display: flex;
-                gap: 70px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 140px;
                 .service-single-content-details {
+                    h2 {
+                        font-size: 48px;
+                        line-height: 56px;
+                        letter-spacing: -2px;
+                        font-weight: 600;
+                        color: $headingColor;
+                        margin-bottom: 25px;
+                    }
+                    p {
+                        font-size: 18px;
+                        line-height: 30px;
+                        font-weight: 500;
+                        color: $textColor;
+                        margin-bottom: 40px;
+                    }
+                    a {
+                    }
                 }
                 .service-single-content-imge {
                     position: relative;

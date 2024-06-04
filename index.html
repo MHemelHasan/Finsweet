@@ -384,7 +384,7 @@
                                         tellus et pellent. Curabitur sit amet
                                         eros blan esque.
                                     </p>
-                                    <a href="#"
+                                    <a class="arrow-btn" href="#"
                                         >See all services
                                         <img
                                             src="./Asset/Img/arrow-icon.png"
@@ -448,8 +448,6 @@
                         <div class="video-player">
                             <video
                                 controls
-                                width="620"
-                                height="500"
                                 poster="./Asset/Img/video-placeholder.png"
                             >
                                 <source
@@ -462,7 +460,13 @@
                                 />
                                 Your browser does not support the video tag.
                             </video>
-                            <div class="video-contolar"></div>
+                            <div class="video-contolar">
+                                <img
+                                    src="./Asset/Img/play.png"
+                                    alt="video play"
+                                />
+                                Play Video
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -561,13 +565,43 @@
 
         <!-- Footer area  -->
         <footer>
-            <small
-                >©
-                <script>
-                    document.write(new Date().getFullYear());
-                </script>
-                M Hemel Hasan. All Rights Reserved.</small
-            >
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="footer-cell-one">
+                        <img
+                            class="footer-logo"
+                            src="./Asset/Img/finsweet.png"
+                            alt="logo"
+                        />
+                        <h5 class="footer-brand-title">
+                            Bespoke software solutions
+                        </h5>
+                        <ul class="inline">
+                            <li>
+                                <a href="#"><i class="fa fab-faecbook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fab-faecbook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fab-faecbook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fab-faecbook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-cell-two"></div>
+                    <div class="footer-cell-there"></div>
+                </div>
+                <small
+                    >©
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    All Rights Reserved – M Hemel Hasan.</small
+                >
+            </div>
         </footer>
 
         <script
